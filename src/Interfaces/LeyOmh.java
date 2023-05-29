@@ -38,38 +38,49 @@ public class LeyOmh extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        area = new javax.swing.JTextArea();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         calcular = new javax.swing.JButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        area = new javax.swing.JTextArea();
         jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jLabel4 = new javax.swing.JLabel();
         v1 = new javax.swing.JLabel();
         v2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        t2 = new javax.swing.JTextField();
-        t1 = new javax.swing.JTextField();
         combo = new javax.swing.JComboBox<>();
+        t1 = new javax.swing.JTextField();
+        t2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        area.setColumns(20);
-        area.setRows(5);
-        jScrollPane1.setViewportView(area);
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 260, 180));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("CALCULADORA LEY DE OHM");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setBackground(new java.awt.Color(0, 153, 153));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setText("Salir");
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Regresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, -1, -1));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, -1));
 
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setText("Limpiar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -77,50 +88,63 @@ public class LeyOmh extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, -1));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, -1, -1));
 
+        calcular.setBackground(new java.awt.Color(0, 153, 153));
         calcular.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        calcular.setForeground(new java.awt.Color(255, 255, 255));
         calcular.setText("Calcular");
         calcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calcularActionPerformed(evt);
             }
         });
-        getContentPane().add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, -1));
+        jPanel2.add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
 
-        jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jRadioButton1.setText("Potencia");
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, -1, -1));
+        area.setColumns(20);
+        area.setRows(5);
+        jScrollPane1.setViewportView(area);
+
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 330, 180));
 
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jRadioButton2.setText("Limpiar texto");
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 290, -1, -1));
+        jPanel2.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, -1, -1));
 
-        v1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        v1.setText("Corriente:");
-        getContentPane().add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, -1, -1));
+        jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jRadioButton1.setText("Potencia");
+        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 240, -1, -1));
 
-        v2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        v2.setText("Resistencia:");
-        getContentPane().add(v2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Variable:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, -1, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, -1, -1));
 
-        t2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        getContentPane().add(t2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 90, -1));
+        v1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        v1.setText("Corriente:");
+        jPanel2.add(v1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, -1, -1));
 
-        t1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        getContentPane().add(t1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, 90, -1));
+        v2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        v2.setText("Resistencia:");
+        jPanel2.add(v2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, -1, -1));
 
+        combo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         combo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Voltaje", "Corriente", "Resistencia" }));
         combo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboActionPerformed(evt);
             }
         });
-        getContentPane().add(combo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 90, -1));
+        jPanel2.add(combo, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 90, -1));
+
+        t1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jPanel2.add(t1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, 90, -1));
+
+        t2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jPanel2.add(t2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 90, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 670, 300));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -209,7 +233,8 @@ public class LeyOmh extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        new Menu().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -242,7 +267,7 @@ public class LeyOmh extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LeyOmh().setVisible(true);
+                new LeyOmh().setVisible(false);
             }
         });
     }
@@ -268,7 +293,10 @@ public class LeyOmh extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> combo;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
